@@ -121,7 +121,7 @@ li {
 
 @media only screen and (max-width: 1200px) {
 nav {
-  position: relative;
+  position:;
   margin-left: 0vw;
   height: 10%;
   width: 100vw;

@@ -66,12 +66,12 @@ main {
   display: block;
   position: sticky;
   top: 1%;
-  margin-right: 1%;
+  margin-right: 2%;
   background-color: white;opacity: 0.7;
   z-index: 1;
 }
 
-.blog {
+.blog-container {
   margin-top: 3vh;
   /* background-color: teal; */
   height: 80%;
@@ -134,10 +134,14 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   }
-  .blog {
+
+  .blog-container {
   margin-top: 0;
 }
-
+.background {
+  background: linear-gradient(to bottom,rgb(50 209 80) 0vh 87vh, white 87vh 100vh);
+}
+}
 @media only screen and (max-width: 550px) {
 .container-1 h1 {
   font-size: 3rem;
