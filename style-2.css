@@ -35,7 +35,7 @@ main {
 
 h1 {
   font-size: 4.5rem;
-  color: rgb(14,205,246);
+  color: rgb(79 190 221);
   display: block;
   margin: 2%;
   position: sticky;
@@ -180,5 +180,4 @@ h1 {
 .pjimg img {
   margin-top: 2%;
 }
-
 }
