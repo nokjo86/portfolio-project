@@ -130,6 +130,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   }
+  
   .background {
   background: linear-gradient(to bottom,rgb(245, 184, 54)0vh 87vh, white 87vh 100vh);
   }

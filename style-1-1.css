@@ -24,7 +24,7 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,black 0vh 13vh,white 13vh 87vh, black 87vh 100vh);
+  background: linear-gradient(to bottom,red 0vh 13vh,white 13vh 87vh, red 87vh 100vh);
 }
 
 main {
@@ -43,8 +43,6 @@ main {
   display: flex;
   align-items: flex-start;
   border-right: 3px solid black;
-  flex-shrink: 3;
-
 }
 
 .aboutme-container::after {
@@ -52,7 +50,7 @@ main {
   background-image: url(/Source/number.png);
   background-size: cover;
   overflow: hidden;
-  opacity: 0.2; 
+  opacity: 0.4; 
   top: 0;
   left: 0;
   bottom: 0;
@@ -65,32 +63,10 @@ main {
   max-width: 80vw;
 }
 
-#hello {
-  display: inline-block;
-  margin-bottom: 2%;
-}
-
-.aboutme-content p {
-  margin-bottom: 2%;
-  text-shadow: 0 0 10px white;
-  font-size: 1.1em;
-}
-
-.aboutme-content span {
-
-  font-size: 1.1em;
-}
-
-.others {
-  margin: 0 !important;
-
-}
-
 .background-container {
-  flex-shrink: 4;
+  flex-shrink: 10;
   width: 40vh;
   height: 74vh;
-  min-width: 15%;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -98,17 +74,9 @@ main {
   justify-content: space-between;
   padding: 2%;
 }
-.imgalt {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 2%;
-}
 
-.imgalt p {
-  text-align: right;
+.background-container p {
+  display: block;
 }
 
 .background-container img{
@@ -120,6 +88,7 @@ main {
 .flex-slide{
   position: relative;
   overflow: hidden;
+  flex: 1 1 1
   cursor: pointer;
   height: 100vh;
   display: flex;
@@ -127,17 +96,18 @@ main {
   justify-content: center;
   border-left: 5px solid  rgb(247,185,48);
   background-color: black;
+  transition: all 1s ease-in-out
 }
 
 .flex-slide:hover {
   background-color: rgb(250, 247, 75);
-  transition: all 2s;
-  min-width: 40vw;
+  flex-grow: 5;
   
 }
 
 .flex-title {
   width: 100px;
+
   color: #f1f1f1;
 	position: relative;
 	font-size: 3em;
@@ -145,27 +115,21 @@ main {
 	text-align: center;
 	transform: rotate(270deg);
   white-space: nowrap;
-  }
+}
 
 .flex-slide:hover .flex-title{
   transform: rotate(0deg);
   font-size: 2em;
   width: 40vw;
   color: black;
-  transition: all 2s 
+}
 
-}
-.flex-slide:hover .flex-about form {
-  opacity: 1;
-  position: static;
-  transition: all 1.5s 1s
-}
 .flex-about form {
   display: none;
   position: absolute;
   bottom: 0;
   opacity: 0;
-  width: 95%;
+  width: 96%;
   border: 3px solid black;
   padding: 5% 2% 5% 2%;
   margin: 4% 2% 0 2%;
@@ -178,7 +142,6 @@ main {
   margin: 1%;
   color: black;
 }
-
 .flex-about form label {
   width: 30%;
   display: inline-block;
@@ -215,105 +178,7 @@ button {
   background-color: blanchedalmond;
 }
 
-@media screen and (max-width: 1400px) {
-.flex-about form > * {
-  font-size: 1em;
-  }
-.flex-about form {
-  padding: 5% 1% 5% 1%;
-}
-.flex-about form label {
-  width: 20%;
-  margin-right: 0;
-}
-flex-about form textarea {
-  width: auto;
-  margin-left: 0;
-}
-}
-
-@media screen and (max-width: 1200px) {
-body{
-  flex-direction: column;
-  height: 100vh;
-}
-
-main {
-  flex-direction: column;
-  width: 100vw;
-  height: 90vh;
-}
-.background {
-  position: fixed;
-  width: 0vw;
-  height: 0vh;
-}
-.aboutme-container {
-  height: 100%;
-  border-right: 0;
-  flex-shrink: 4;
-  border-bottom: 3px solid black;
-  overflow: scroll;
-
-}
-.aboutme-content {
-  padding: 3%;
-  max-width: 100%;
-}
-.background-container{
-flex-shrink: 5;
-max-height: 20vh;
-flex-direction: row;
-justify-content: flex-end;
-width: 100%;
-padding: 1%;
-}
-
-.background-container img{
-  height: 100%;
-  width: auto;
-  border: 2px solid darkblue;
-}
-
-.flex-slide {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: auto;
-  border-left: 0;
-  border-top: 3px solid  rgb(247,185,48);
-  width: 100vw;
-}
-
-.flex-slide:hover {
-  height: 40vh;
-}
-
-.flex-title {
-  transform: rotate(0deg);
-  width: 100vw;
-}
-.flex-slide:hover .flex-title{
-  transform: rotate(270deg);
-  font-size: 2em;
-  max-width: 10%;
-  align-self: flex-end;
-  margin-bottom: 3%;
-  transition: all 1s 
-}
-.flex-about form {
-  width: 85vw;
-  height: 90%;
-  border: 3px solid black;
-  padding: 1% 2% 1% 2%;
-  margin: 1% 2% 0 1%;
-  justify-content: center;
-}
-button {
-  margin: 1% auto !important;
-}
-.flex-about form textarea {
-  height: 100px;
-
-}
+.flex-slide:hover .flex-about form {
+  opacity: 1;
+  position: static;
 }
