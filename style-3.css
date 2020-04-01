@@ -22,7 +22,7 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,white 0vh 13vh,rgb(92 219 149) 13vh 87vh, white 87vh 100vh);
+  background: linear-gradient(to bottom,white 0vh 13vh,rgb(27 147 76) 13vh 87vh, white 87vh 100vh);
 }
 
 main {
@@ -141,7 +141,7 @@ main {
   margin-top: 0;
 }
 .background {
-  background: linear-gradient(to bottom,rgb(92 219 149) 0vh 87vh, white 87vh 100vh);
+  background: linear-gradient(to bottom,rgb(27 147 76) 0vh 87vh, white 87vh 100vh);
 }
 }
 @media only screen and (max-width: 550px) {
