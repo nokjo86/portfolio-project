@@ -13,7 +13,7 @@ src: url("Source/BRLNSR.TTF");
 body{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,white 13%,rgb(14,205,246) 13% 87%, white 87%);
+  background: linear-gradient(to bottom,white 13%,rgb(79 190 221) 13% 87%, white 87%);
   display: flex;
   justify-content: space-between;
 }
@@ -69,7 +69,7 @@ main {
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    background: linear-gradient(to bottom,white 13%,rgb(14,205,246) 13% 87%, black 87%);
+    background: linear-gradient(to bottom,white 13%,rgb(79 190 221) 13% 87%, black 87%);
     display: flex;
   }
   main {
