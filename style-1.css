@@ -125,7 +125,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 5px solid  rgb(247,185,48);
+  border-left: 5px solid  rgb(250 210 72);
   background-color: black;
 }
 
@@ -281,7 +281,7 @@ padding: 1%;
   align-items: center;
   height: auto;
   border-left: 0;
-  border-top: 3px solid  rgb(247,185,48);
+  border-top: 3px solid  rgb(250 210 72);
   width: 100vw;
 }
 

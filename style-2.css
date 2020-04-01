@@ -21,7 +21,7 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,white 0vh 13vh,rgb(245, 184, 54)13vh 87vh, white 87vh 100vh);
+  background: linear-gradient(to bottom,white 0vh 13vh,rgb(250 210 72)13vh 87vh, white 87vh 100vh);
 }
 
 main {
@@ -132,7 +132,7 @@ h1 {
   }
   
   .background {
-  background: linear-gradient(to bottom,rgb(245, 184, 54)0vh 87vh, white 87vh 100vh);
+  background: linear-gradient(to bottom,rgb(250 210 72)0vh 87vh, white 87vh 100vh);
   }
   .projects-container {
     position: static;

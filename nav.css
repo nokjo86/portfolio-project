@@ -51,7 +51,7 @@ ul {
 
 .projects::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgb(247,185,48); /* Change the color */
+  color: rgb(250 210 72); /* Change the color */
   font-weight: bold;
   display: inline-block;
   width: 1.5em; 
@@ -60,7 +60,7 @@ ul {
 
 .projects::after {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgb(247,185,48); /* Change the color */
+  color: rgb(250 210 72); /* Change the color */
   font-weight: bold;
   display: inline-block;
   width: 1.5em; 
