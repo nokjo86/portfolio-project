@@ -1,19 +1,32 @@
 @font-face {
-font-family: "Berlin Sans FB Regular";
-src: url("Source/BRLNSR.TTF");
+  font-family: "Berlin Sans FB Regular";
+  src: url("Source/BRLNSR.TTF");
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Berlin Sans FB Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Berlin Sans FB Regular, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
 }
 
-nav{
-    box-shadow: 0px 0px 10px 8px rgb(80, 80, 80) !important;
+footer {
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 0.5%;
+  display: flex;
 }
-body{
+
+footer img {
+  width: 100%;
+}
+
+nav {
+  box-shadow: 0px 0px 10px 8px rgb(80, 80, 80) !important;
+}
+body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -24,7 +37,12 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,black 0vh 13vh,white 13vh 87vh, black 87vh 100vh);
+  background: linear-gradient(
+    to bottom,
+    black 0vh 13vh,
+    white 13vh 87vh,
+    black 87vh 100vh
+  );
 }
 
 main {
@@ -41,10 +59,10 @@ main {
   height: 74vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   border-right: 3px solid black;
   flex-shrink: 3;
-
 }
 
 .aboutme-container::after {
@@ -52,7 +70,7 @@ main {
   background-image: url(/Source/number.png);
   background-size: cover;
   overflow: hidden;
-  opacity: 0.2; 
+  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -77,13 +95,28 @@ main {
 }
 
 .aboutme-content span {
-
   font-size: 1.1em;
 }
 
 .others {
   margin: 0 !important;
+}
 
+.downloadlink {
+  margin-left: 1.5%;
+}
+.downloadlink h2 {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.downloadlink a {
+  cursor: pointer;
+}
+
+.downloadlink a h2 {
+  background-color: rgb(250 210 72);
+  color: black;
 }
 
 figure {
@@ -111,13 +144,13 @@ figcaption p {
   text-align: right;
 }
 
-figure img{
+figure img {
   height: auto;
   width: 100%;
   border: 3px solid darkblue;
 }
 
-.flex-slide{
+.flex-slide {
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -125,7 +158,7 @@ figure img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 5px solid  rgb(250 210 72);
+  border-left: 5px solid rgb(250 210 72);
   background-color: black;
 }
 
@@ -133,32 +166,30 @@ figure img{
   background-color: rgb(250, 247, 75);
   transition: all 2s;
   min-width: 40vw;
-  
 }
 
 .flex-title {
   width: 100px;
   color: #f1f1f1;
-	position: relative;
-	font-size: 3em;
-	margin: 0;
-	text-align: center;
-	transform: rotate(270deg);
+  position: relative;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  transform: rotate(270deg);
   white-space: nowrap;
-  }
+}
 
-.flex-slide:hover .flex-title{
+.flex-slide:hover .flex-title {
   transform: rotate(0deg);
   font-size: 2em;
   width: 40vw;
   color: black;
-  transition: all 2s 
-
+  transition: all 2s;
 }
 .flex-slide:hover .flex-about form {
   opacity: 1;
   position: static;
-  transition: all 1.5s 1s
+  transition: all 1.5s 1s;
 }
 .flex-about form {
   display: none;
@@ -200,7 +231,6 @@ figure img{
   border: 2px solid black;
   padding: 3px;
   font-size: 0.8em;
-  
 }
 
 #msgbox {
@@ -216,124 +246,138 @@ button {
 }
 
 @media screen and (max-width: 1400px) {
-.flex-about form > * {
-  font-size: 1em;
+  .flex-about form > * {
+    font-size: 1em;
   }
-.flex-about form {
-  padding: 5% 1% 5% 1%;
-}
-.flex-about form label {
-  width: 20%;
-  margin-right: 0;
-}
-flex-about form textarea {
-  width: auto;
-  margin-left: 0;
-}
+  .flex-about form {
+    padding: 5% 1% 5% 1%;
+  }
+  .flex-about form label {
+    width: 20%;
+    margin-right: 0;
+  }
+  flex-about form textarea {
+    width: auto;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-body{
-  flex-direction: column;
-  height: 100vh;
-}
+  body {
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: flex-end */
+  }
 
-main {
-  flex-direction: column;
-  width: 100vw;
-  height: 90vh;
-}
-.background {
-  position: fixed;
-  width: 0vw;
-  height: 0vh;
-}
-.aboutme-container {
-  width: 100%;
-  height: 100%;
-  border-right: 0;
-  flex-shrink: 4;
-  border-bottom: 3px solid black;
-  overflow: scroll;
+  main {
+    /* position: relative; */
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+  }
+  .background {
+    width: 0vw;
+    height: 0vh;
+  }
+  .aboutme-container {
+    width: 100%;
+    height: 100%;
+    border-right: 0;
+    flex-shrink: 4;
+    border-bottom: 3px solid black;
+    overflow: scroll;
+  }
+  .aboutme-content {
+    padding: 3%;
+    max-width: 100%;
+  }
+  figure {
+    flex-shrink: 5;
+    max-height: 20vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1%;
+  }
 
-}
-.aboutme-content {
-  padding: 3%;
-  max-width: 100%;
-}
-figure {
-flex-shrink: 5;
-max-height: 20vh;
-flex-direction: row;
-justify-content: flex-end;
-width: 100%;
-padding: 1%;
-}
+  figure img {
+    height: 100%;
+    width: auto;
+    border: 2px solid darkblue;
+  }
 
-figure img{
-  height: 100%;
-  width: auto;
-  border: 2px solid darkblue;
-}
+  .flex-slide {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    border-left: 0;
+    border-top: 3px solid rgb(250 210 72);
+    width: 100vw;
+  }
 
-.flex-slide {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: auto;
-  border-left: 0;
-  border-top: 3px solid  rgb(250 210 72);
-  width: 100vw;
-}
+  .flex-slide:hover {
+    height: 40vh;
+  }
 
-.flex-slide:hover {
-  height: 40vh;
+  .flex-title {
+    transform: rotate(0deg);
+    width: 100vw;
+  }
+  .flex-slide:hover .flex-title {
+    transform: rotate(270deg);
+    font-size: 2em;
+    max-width: 10%;
+    align-self: flex-end;
+    margin-bottom: 3%;
+    transition: all 1s;
+  }
+  .flex-about form {
+    width: 85vw;
+    height: 90%;
+    border: 3px solid black;
+    padding: 1% 2% 1% 2%;
+    margin: 1% 2% 0 1%;
+    justify-content: center;
+  }
+  button {
+    margin: 1% auto !important;
+  }
+  .flex-about form textarea {
+    height: 100px;
+  }
+  footer {
+    top: 11%;
+    left: 90%;
+  }
+  footer img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 8px 5px 0px;
+  }
 }
-
-.flex-title {
-  transform: rotate(0deg);
-  width: 100vw;
-}
-.flex-slide:hover .flex-title{
-  transform: rotate(270deg);
-  font-size: 2em;
-  max-width: 10%;
-  align-self: flex-end;
-  margin-bottom: 3%;
-  transition: all 1s 
-}
-.flex-about form {
-  width: 85vw;
-  height: 90%;
-  border: 3px solid black;
-  padding: 1% 2% 1% 2%;
-  margin: 1% 2% 0 1%;
-  justify-content: center;
-}
-button {
-  margin: 1% auto !important;
-}
-.flex-about form textarea {
-  height: 100px;
-
-}
+@media screen and (max-width: 800px) {
+  footer {
+    top: 11%;
+    left: 80%;
+  }
 }
 
 @media screen and (max-height: 350px) {
   .aboutme-container {
-  flex-shrink: 12;
-}
+    flex-shrink: 12;
+  }
 
-figure{
-flex-shrink: 13;
-max-height: 10vh;
-}
+  figure {
+    flex-shrink: 13;
+    max-height: 10vh;
+  }
 
-figcaption {
-  padding-bottom: 0;
-}
+  figcaption {
+    padding-bottom: 0;
+  }
 
-.flex-slide {
-  min-height: 50vh;
-}
+  .flex-slide {
+    min-height: 50vh;
+  }
 }

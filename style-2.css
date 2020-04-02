@@ -10,6 +10,18 @@ src: url("Source/BRLNSR.TTF");
   font-family: Berlin Sans FB Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer {
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 0.5%;
+  display: flex;
+}
+
+footer img {
+  width: 100%;
+}
+
 body{
   width: 100vw;
   height: 100vh;
@@ -143,12 +155,33 @@ h1 {
     min-width: 690px;
     min-height: 420px;
   }
+
+  footer {
+  top: 11%;
+  left: 90%;
+  }
+  footer img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 8px 5px 0px;
+  }
 }
-  @media only screen and (max-width: 550px) {
+
+@media screen and (max-width: 1000px) {
+  footer {
+    top: 11%;
+    left: 85%;
+  }
+}
+
+  @media only screen and (max-width: 700px) {
   h1 {
   font-size: 3rem;
   }
-  
+  footer {
+  top: 11%;
+  left: 80%;
+  }
   main{
     height: 90vh;
   }
