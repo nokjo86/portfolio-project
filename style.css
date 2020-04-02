@@ -1,23 +1,28 @@
 @font-face {
-font-family: "Berlin Sans FB Regular";
-src: url("Source/BRLNSR.TTF");
+  font-family: "Berlin Sans FB Regular";
+  src: url("Source/BRLNSR.TTF");
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Berlin Sans FB Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Berlin Sans FB Regular, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom,white 13%,rgb(79 190 221) 13% 87%, white 87%);
+  background: linear-gradient(
+    to bottom,
+    white 13%,
+    rgb(79 190 221) 13% 87%,
+    white 87%
+  );
   display: flex;
   justify-content: space-between;
 }
-
 
 main {
   height: 100%;
@@ -69,7 +74,12 @@ main {
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    background: linear-gradient(to bottom,white 13%,rgb(79 190 221) 13% 87%, black 87%);
+    background: linear-gradient(
+      to bottom,
+      white 13%,
+      rgb(79 190 221) 13% 87%,
+      black 87%
+    );
     display: flex;
   }
   main {
@@ -95,7 +105,6 @@ main {
     width: 100%;
     margin: 0;
     object-fit: cover;
-
   }
   .container-1 p {
     color: white;
@@ -119,5 +128,4 @@ main {
   .container-1 h1 {
     font-size: 2em;
   }
-
 }

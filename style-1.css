@@ -86,7 +86,7 @@ main {
 
 }
 
-.background-container {
+figure {
   flex-shrink: 4;
   width: 40vh;
   height: 74vh;
@@ -98,7 +98,7 @@ main {
   justify-content: space-between;
   padding: 2%;
 }
-.imgalt {
+figcaption {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,11 +107,11 @@ main {
   padding: 2%;
 }
 
-.imgalt p {
+figcaption p {
   text-align: right;
 }
 
-.background-container img{
+figure img{
   height: auto;
   width: 100%;
   border: 3px solid darkblue;
@@ -261,7 +261,7 @@ main {
   padding: 3%;
   max-width: 100%;
 }
-.background-container{
+figure {
 flex-shrink: 5;
 max-height: 20vh;
 flex-direction: row;
@@ -270,7 +270,7 @@ width: 100%;
 padding: 1%;
 }
 
-.background-container img{
+figure img{
   height: 100%;
   width: auto;
   border: 2px solid darkblue;
@@ -324,12 +324,12 @@ button {
   flex-shrink: 12;
 }
 
-.background-container{
+figure{
 flex-shrink: 13;
 max-height: 10vh;
 }
 
-.imgalt {
+figcaption {
   padding-bottom: 0;
 }
 
