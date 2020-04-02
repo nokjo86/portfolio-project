@@ -21,7 +21,7 @@ footer {
 
 body {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   /* background: linear-gradient(to bottom,white 0vh 13vh,rgb(15 239 94) 13vh 87vh, white 87vh 100vh); */
   display: flex;
   justify-content: space-between;
