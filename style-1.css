@@ -100,18 +100,16 @@ main {
 
 .downloadlink {
   margin-left: 1.5%;
+  z-index: 2;
 }
 .downloadlink h2 {
   display: inline-block;
-  margin-left: 5px;
-}
-
-.downloadlink a {
-  cursor: pointer;
+  margin-left: 5px;  
 }
 
 .downloadlink a h2 {
   background-color: rgb(250 210 72);
+  cursor: pointer;
   color: black;
 }
 
